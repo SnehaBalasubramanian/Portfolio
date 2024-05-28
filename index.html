@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Og1HnhFQUpC73ADe0",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" style="color: #5B63B7;">SNEHA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <button class="btn btn-color-2" style="margin-top: 15px;" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+        </button>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">SNEHA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Resume" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="lens">
+        <div class="section__pic-container">
+          <img src="./assets/s.jpg" alt="John Doe profile picture" class="rounded-image">
+      </div>
+      </div>
+        <div class="section__text heading" data-aos="fade-right" data-aos-offset="400">
+            <p class="section__text__p3">Hello, </p>
+            <h1 class="name">I'm <span style="color: #5B63B7;">Sneha</span></h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <p class="sec" style="font-size:medium; font-weight: 500;">I specialize in crafting dynamic, scalable web
+                applications with a keen eye for responsive design. I am a Skilled and passionate web developer with
+                experience
+                in creating visually appealing and user-friendly websites.</p>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https:linkedin.com/in/sneha-b-a75949272/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https:github.com/SnehaBalasubramanian'" style="margin-left: 20px;" />
+                    <button class="btn resume btn-color-2" style="margin-top: 15px;" onclick="window.open('./assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+            </div>
+        </div>
+        <div class="section__pic-container hello">
+            <img src="./assets/s.jpg" alt="John Doe profile picture" class="rounded-image">
+        </div>
+
+       
+    </section>
+
+
+
+
+    <section id="About">
+        <p class="section__text__p1 on" data-aos="fade-down" data-aos-duration="3000">Get To Know More</p>
+
+        <div class="section-container">
+            <h1 class="title" style="color: #5B63B7; margin-bottom: 30px;" data-aos="zoom-in" data-aos-duration="3000">
+                About
+                ME</h1>
+            <p class="detail" data-aos="flip-up" data-aos-offset="300">Enthusiastic front-end developer passionate about
+                creating innovative, user-focused applications. I bring a
+                blend of technical expertise and creative problem-solving. Feel free to explore my portfolio to get a
+                glimpse of my work. If you have a project or an idea you'd like to discuss, I'm always open to new
+                opportunities and collaborations. </p>
+
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1" data-aos="fade-down" data-aos-duration="3000">Explore My</p>
+        <h2 class="title">Experience <span style="color: black;">&</span> Skills</h2>
+
+        <div class="about-details-container">
+            <div class="about-containers" style="gap: 40px; margin-top: 50px;">
+                <div class="details-container" data-aos="flip-left" data-aos-offset="300">
+                    <img src="./assets/experience.png" style="margin-top: 10px;" alt="Experience icon" class="icon" />
+                    <h3>Experience</h3>
+                    <p><b>Intern at Digiplus Agency</b></p>
+                    <p>Speclization in Frontend Development</p>
+                </div>
+                <div class="details-container" data-aos="flip-right" data-aos-offset="300">
+                    <img src="./assets/education.png" style="margin-top: 10px;" alt="Education icon" class="icon" />
+                    <h3>Education</h3>
+                    <p><b>Sastra University(2019-2023)</b></p>
+                    <p>B.Tech(ECE)-CGPA : 7.1552</p>
+                </div>
+            </div>
+            <h4 class="skill-section">Here Some Of My Skills:</h4>
+            <div class="row hii">
+                <div class="col-8">
+                    <h4 style="text-decoration: none;">Front-end Techonology:</h4>
+                    <div class="front">
+                    <div class="skillsknown" data-aos="fade-right" data-aos-offset="300">
+
+                        <div class="skillset">
+                            <div class="figma">
+                                <img src="assets/figma.png" style="width: 30px;">
+                            </div>
+                            <p style="margin-left: 8px;">Figma</p>
+                        </div>
+                        <div class="skillset">
+                            <div class="figma">
+                                <img src="assets/html.png" style="width: 50px ;">
+                            </div>
+                            <p style="margin-left: 13px;">HTML</p>
+                        </div>
+                        <div class="skillset">
+                            <div class="figma">
+                                <img src="assets/css (2).png" style="width: 40px ;">
+                            </div>
+                            <p style="margin-left: 17px;">CSS</p>
+                        </div>
+                        <div class="skillset2">
+                            <div class="figma2">
+                                <img src="assets/Bootstrap_logo.svg.png" style="width: 40px ; height: 50px;">
+                            </div>
+                            <p style="margin-right:2px;">Bootstrap</p>
+                        </div>
+                        <div class="skillset2">
+                            <div class="figma2">
+                                <img src="assets/js.png" style="width: 50px ; border-radius: 100%;">
+                            </div>
+                            <p style="margin-left: px;">Javascript</p>
+                        </div>
+                    </div>
+                    <!-- OTHER -->
+                    <div class="none">
+                      <div class="none1" data-aos="fade-left" data-aos-offset="300">
+                      <div class="skillset">
+                        <div class="figma">
+                            <img src="assets/Bootstrap_logo.svg.png" style="width: 30px; margin-left: 10px;">
+                        </div>
+                        <p style="margin-left: 8px;">Bootstrap</p>
+                    </div>
+                    <div class="skillset">
+                        <div class="figma">
+                            <img src="assets/js.png" style="width: 50px ; margin-left: 20px;">
+                        </div>
+                        <p style="margin-left: 13px;">javascript</p>
+                    </div>
+                    <div class="skillset">
+                        <div class="figma">
+                            <img src="assets/jquery.png" style="width: 40px ;margin-left: 10px;">
+                        </div>
+                        <p style="margin-left: 17px;">jQuery</p>
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <div class="none3">
+                      <div class="none4" data-aos="fade-right" data-aos-offset="300">
+                      <div class="skillset">
+                        <div class="figma">
+                            <img src="assets/react.png" style="width: 30px;">
+                        </div>
+                        <p style="margin-left: 8px;">React</p>
+                    </div>
+                    <div class="skillset">
+                      <div class="figma">
+                          <img src="assets/photoshop.png" style="width: 50px ;margin-left: 40px;">
+                      </div>
+                      <p style="margin-left: 17px;">photoshop</p>
+                  </div>
+                  <div class="skillset">
+                    <div class="figma">
+                        <img src="assets/wordpress.png" style="width: 50px ;margin-left: 40px;">
+                    </div>
+                    <p style="margin-left: 13px;">Wordpress</p>
+                </div>
+                  </div>
+                    
+                    
+                    </div>
+
+
+
+                    <!-- OTHER -->
+
+                    <div class="skillsec" style="margin-top: 30px;" data-aos="fade-right" data-aos-offset="300">
+                        <div class="skillset2">
+                            <div class="figma2">
+                                <img src="assets/jquery.png">
+                            </div>
+                            <p style="margin-left: 8px;">jquery</p>
+                        </div>
+                        <div class="skillset2">
+                            <div class="figma2">
+                                <img src="assets/react.png">
+                            </div>
+                            <p style="margin-left: 12px;">React</p>
+                        </div>
+                        <div class="skillset3">
+                            <div class="figma3">
+                                <img src="assets/photoshop.png">
+                            </div>
+                            <p style="margin-left: -6px;">photoshop</p>
+                        </div>
+                        <div class="skillset3">
+                            <div class="figma3">
+                                <img src="assets/wordpress.png">
+                            </div>
+                            <p style="margin-left: px;">wordpress</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-4">
+
+                    <h4 class="progname" style="text-decoration: none;">Programming Language:</h4>
+                    <div class="Programming" data-aos="fade-left" data-aos-offset="300">
+                        <div class="skillset">
+                            <div class="figma1">
+                                <img src="assets/c++.png" style="width: 80px ;">
+                            </div>
+                            <p style="margin-left:19px;">C++</p>
+                        </div>
+                        <div class="skillset">
+                            <div class="figma1">
+                                <img src="assets/python.png">
+                            </div>
+                            <p style="margin-left: 8px;">Python</p>
+                        </div>
+                        <div class="skillset">
+                            <div class="figma1">
+                                <img src="assets/sql.png" style="width: 90px ;">
+                            </div>
+                            <p style="margin-left: 19px;">SQL</p>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <h4 class="progname" style="text-decoration: none;">Others:</h4>
+                        <div class="otherskills" data-aos="fade-left" data-aos-offset="300">
+                            <div class="skillset">
+                                <div class="figma1">
+                                    <img src="assets/git.jpeg" style="width: 48px ;">
+                                </div>
+                                <p style="margin-left: 5px;">Github</p>
+                            </div>
+                            <div class="skillset">
+                                <div class="figma1">
+                                    <img src="assets/render.jpg" style="width: 80px ;">
+                                </div>
+                                <p style="margin-left: 5px;">Render</p>
+                            </div>
+                            <div class="skillset">
+                                <div class="figma1">
+                                    <img src="assets/netlify.png" style="width: 80px ;">
+                                </div>
+                                <p style="margin-left: 11px;">Netlify</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+    <section id="Resume">
+        <p class="section__text__p1" data-aos="fade-down" data-aos-duration="3000">Here's my resume</p>
+        <h1 class="title" style="color: #5B63B7; margin-top: 30px; margin-bottom: 30px;" data-aos="zoom-in"
+            data-aos-duration="3000">Resume</h1>
+
+        <div class="profile">
+            <p>I wish to utilize my skill and knowledge effectively for the organization's growth and become a
+                valuable asset. Self-motivated to consistently provide first-class results in line with stringent
+                targets
+                and deadlines. Dedicated to self-development to provide exception-exceeding service</p>
+        </div>
+        <div class="row">
+            <div class="col-5">
+
+                <div class="education">
+                    <h4>Education</h4>
+                    <ul>
+                        <li>2019 - 2023: <b>B.Tech, ECE</b>, SASTRA Deemed University<b>(CGPA: 7.1552)</b></li>
+                        <li>2018 - 2019: <b>12 - HSC</b>, C.P. Vidya Mandir Hr.Sec.School <b>(Percentage: 71%)</b></li>
+                        <li>2016 - 2017: <b>10 - SSLC</b>, C.P. Vidya Mandir Hr.Sec.School <b> (Percentage: 91.8%)</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="certifications">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>Training in Kaashiv InfoTech based on Python</li>
+                        <li>Online certification Coursera course on Programming in Python</li>
+                        <li>Workshop on JavaScript</li>
+                    </ul>
+                </div>
+                <div class="personal-skill">
+                    <h4>Skill</h4>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                        <li>Flexibility and Adaptability</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1">
+                <div class="vertical-line"></div>
+            </div>
+
+
+
+
+
+            <div class="col-6">
+                <div class="exp">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>Intern, Digiplus Agency: Completed in Front-end Development</li>
+                        <li> I am Completed a front end developement course at
+                            Web D School, Where I am actively learning to develop
+                            engaging and Responsive website.</li>
+                    </ul>
+                </div>
+                <div class="exp">
+                    <h4>Projects</h4>
+                    <h5>Academic:</h5>
+                    <ul>
+                        <li>1.Project based on Convolutional Neural Networks : Automatic Detection of White Blood Cancer
+                            from Bone
+                            Marrow Microscopic Images </li>
+                        <li> 2. Project based on Soft Computing : Optimization and Analysis of Wireless Networks
+                            Lifetime for
+                            Industrial Application</li>
+                    </ul>
+                    <h5>Web Development Projects: </h5>
+                    <ul>
+                        <li> Developed a online couching website for women about fitness using HTML, CSS</li>
+                        <li>Designed and implemented a dashboard for a learning platform using Bootstrap</li>
+                        <li>Developed a bus seat booking project using JavaScript</li>
+                        <li>Developed E-Commerce website using React</li>
+                    </ul>
+                </div>
+                <div class="Language">
+                    <h4>Technical Skills:</h4>
+                    <ul>
+                        <li>Programming Language: JS, C++, SQL, Python</li>
+                        <li>Web Development: HTML, CSS, React js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Projects" style="margin-top: 50px;">
+        <p class="section__text__p1" data-aos="fade-down" data-aos-duration="3000">Browse My Recent</p>
+        <h1 class="title" data-aos="zoom-in" data-aos-duration="3000">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers" data-aos="fade-down" data-aos-duration="3000">
+                <div class="details-container ">
+                    <div class="article-container">
+                        <img src="assets/e.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 30px; color: #5B63B7;">Shopping Website</h6>
+                    <p class="experience-sub-title1 project-title"> Built with React for a fast, responsive design,
+                        ensuring
+                        optimal performance on any device.</p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                        <p class="react">React</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/Ecommerce-website-USing-React', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://ecommerce-website-using-react-1.onrender.com', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container ">
+                    <div class="article-container">
+                        <img src="assets/g.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 35px;">Video-Chat Website</h6>
+                    <p class="experience-sub-title1 project-title">Our video-chat website offers seamless, high-quality
+                        video
+                        calls for personal and professional use. </p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                        <p class="react">React</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/VideoConference-Using-React', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://test-1-d3gh.onrender.com', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="article-container">
+                        <img src="assets/w.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 35px;">Chat Application</h6>
+                    <p class="experience-sub-title1 project-title">Our chat app secure conversations, and easy
+                        multimedia sharing
+                        for seamless communication.</p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                        <p class="react">React</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/ChatApp-Using-React', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://chatapp-using-react-1.onrender.com', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="experience-details-container">
+                <div class="about-containers" style="margin-top: 40px;" data-aos="fade-down" data-aos-duration="3000">
+                    <div class="details-container ">
+                        <div class="article-container">
+                            <img src="assets/bus.png" alt="Project 1" class="project-img" />
+                        </div>
+                        <h6 class="projects_head" style="margin-top: 35px;">AIMO Tickets Booking</h6>
+                        <p class="experience-sub-title1 project-title">Discover and book your next adventure
+                            effortlessly with our
+                            user-friendly platform.</p>
+                        <div class="lang_knowns">
+                            <p class="html">HTML</p>
+                            <p class="css">CSS</p>
+                            <p class="javascript">JavaScript</p>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open('https://github.com/SnehaBalasubramanian/BusTicketBooking', '_blank')">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open(' https://snehabalasubramanian.github.io/BusTicketBooking/', '_blank')">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="article-container">
+                            <img src="assets/d.png" alt="Project 1" class="project-img" />
+                        </div>
+                        <h6 class="projects_head" style="margin-top: 35px;">Dashboard</h6>
+                        <p class="experience-sub-title1 project-title">Our dashboard provides a clear, intuitive
+                            interface for data visualization and easy management.</p>
+                        <div class="lang_knowns">
+                            <p class="bootstrap">Bootstrap</p>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open('https://github.com/SnehaBalasubramanian/Dashboard', '_blank')">Github</button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open('https://snehabalasubramanian.github.io/Dashboard/', '_blank')">Live
+                                Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <div class="article-container">
+                            <img src="assets/Screenshot 2024-05-17 165041.png" alt="Project 2" class="project-img" />
+                        </div>
+                        <h6 class="projects_head" style="margin-top: 35px;">Gym Website</h6>
+                        <p class="experience-sub-title1 project-title">Our gym website offers class schedules,
+                            membership options, and fitness tips.</p>
+                        <div class="lang_knowns">
+                            <p class="bootstrap">Bootstrap</p>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open('https://github.com/SnehaBalasubramanian/Fitness-Website-Using-Bootstrap', '_blank')">Github</button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="window.open('https://snehabalasubramanian.github.io/Fitness-Website-Using-Bootstrap/', '_blank')">Live
+                                Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="experience-details-container">
+                <div class="about-containers" data-aos="fade-down" data-aos-duration="3000">
+                <div class="details-container">
+                    <div class="article-container">
+                        <img src="assets/api.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 35px;">CountryAPI</h6>
+                    <p class="experience-sub-title1 project-title">A simple and efficient API to find country details
+                        including continent, currency, and languages.</p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                        <p class="api">API</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/API', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://snehabalasubramanian.github.io/API/', '_blank')">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <div class="article-container">
+                        <img src="assets/Screenshot 2024-05-17 161943.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 35px;">E-commerce Website</h6>
+                    <p class="experience-sub-title1 project-title">Our e-commerce website showcases products elegantly
+                        with HTML and CSS.</p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/Multipage-Webiste-Using-HTML', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://snehabalasubramanian.github.io/Multipage-Webiste-Using-HTML/', '_blank')">Live
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="details-container ">
+                    <div class="article-container">
+                        <img src="assets/Screenshot 2024-05-17 164701.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h6 class="projects_head" style="margin-top: 35px;">Tour Website</h6>
+                    <p class="experience-sub-title1 project-title">Discover and book your next adventure effortlessly
+                        with our
+                        user-friendly platform.</p>
+                    <div class="lang_knowns">
+                        <p class="html">HTML</p>
+                        <p class="css">CSS</p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/SnehaBalasubramanian/Travel', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://snehabalasubramanian.github.io/Travel/', '_blank')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+</div>
+</div>
+        </div>
+    </section>
+
+
+
+    <section id="Contact">
+        <p class="section__text__p1" data-aos="fade-down" data-aos-duration="3000">Get in Touch</p>
+        <h1 class="title" data-aos="zoom-in" data-aos-duration="3000">Contact Me</h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="mail1" data-aos="fade-right" data-aos-duration="3000">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="MAil_id">
+                        <h6>Email:</h6>
+                        <p>snehabalasubramanian01@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cell" data-aos="fade-right" data-aos-duration="3000">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="cellphone">
+                        <h6>Call:</h6>
+                        <p>+91 9361337192</p>
+                    </div>
+                </div>
+                <div class="mail1" data-aos="fade-right" data-aos-duration="3000">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="MAil_id">
+                        <h6>Location:</h6>
+                        <p>Kumbakonam-TamilNadu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 inputbox" style="margin-left: 20px;">
+                <div class="one">
+                    <div class="name1">
+                        <p>Name:</p>
+                        <input id="first_name" name="first_name" />
+                    </div>
+                    <div class="mail">
+                        <p>e-Mail:</p>
+                        <input id="email" name="email" />
+                    </div>
+
+                </div>
+                <div class="mail">
+                    <p>Phone Number:</p>
+                    <input id="phone" name="phone" />
+                </div>
+
+                <p>Subject:</p>
+                <input id="subject" name="subject" />
+                <p>Message:</p>
+                <input id="description" name="description" />
+                <div class="button_container">
+                    <button id="btn1" type="submit" onclick="submitingdata()">Send Message</button>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <section id="aboutnone">
+        
+            <div class="mail1" data-aos="fade-right" data-aos-duration="3000">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="MAil_id">
+                    <h6>Email:</h6>
+                    <p>snehabalasubramanian01@gmail.com</p>
+                </div>
+            </div>
+            <div class="cell" data-aos="fade-right" data-aos-duration="3000">
+                <i class="fa-solid fa-phone"></i>
+                <div class="cellphone">
+                    <h6>Call:</h6>
+                    <p>+91 9361337192</p>
+                </div>
+            </div>
+            <div class="mail1" data-aos="fade-right" data-aos-duration="3000">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="MAil_id">
+                    <h6>Location:</h6>
+                    <p>Kumbakonam-TamilNadu</p>
+                </div>
+            </div>
+        
+    </section>
+
+
+    <footer>
+        <p>Copyright &#169; 2024 Sneha. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function scrollToContact() {
+            document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
