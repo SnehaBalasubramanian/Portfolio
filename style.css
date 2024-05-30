@@ -192,7 +192,7 @@ section {
 
 .section__text__p2 {
   font-size: 2rem;
-  letter-spacing: 7px;
+  
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -315,8 +315,9 @@ section {
 /* SKILLS */
 
 .skill-section {
-  margin-top: 50px;
+  margin-top: 70px;
   color: gray;
+  text-align: center;
 }
 
 .col-8 .skillsknown {
@@ -722,12 +723,12 @@ article .icon {
 }
 
 footer p {
- padding-top: 40px;
+ padding-top: 17px;
   text-align: center;
 }
 footer{
   width: 100%;
-  height: 90px;
+  height: 55px;
   background-color: #d6d6d6;
   margin-top: 30px;
 }

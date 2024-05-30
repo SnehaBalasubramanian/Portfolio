@@ -219,7 +219,9 @@
   #aboutnone i{
     color: #5B63B7;
   }
- 
+ #aboutnone p{
+  font-size: smaller;
+ }
 
   
 
