@@ -50,6 +50,7 @@
   }
   
   @media screen and (max-width: 600px) {
+   
     #contact,
     footer {
       height: 10vh;
@@ -172,6 +173,9 @@
   .otherskills{
     gap: 35px;
   }
+  #resume{
+    overflow: hidden;
+  }
   
   .on {
     margin-top: 70px;
@@ -185,10 +189,12 @@
   }
   .resume{
     display: block;
-    
   }
   #Contact .col-4{
     display: none;
+  }
+  .inputbox{
+   margin-right: 40px;
   }
   .one{
     display: flex;

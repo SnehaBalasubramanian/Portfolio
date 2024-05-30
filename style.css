@@ -38,14 +38,16 @@ nav {
 .nav-links {
   gap: 3rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-top: 18px;
+  margin-right: 200px;
 }
 
 a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+
 }
 
 a:hover {
@@ -180,7 +182,7 @@ section {
 }
 
 .section__text p {
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .section__text__p1 {
@@ -195,7 +197,7 @@ section {
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s,
-    cursor .13s step-end infinite alternate;
+  cursor .13s step-end infinite alternate;
 }
 
 @keyframes cursor {
@@ -244,7 +246,7 @@ section {
 }
 
 .name {
-  font-weight: bolder;
+  font-weight: bold;
 }
 /* button */
 .btn-container {
@@ -256,10 +258,11 @@ section {
 .btn {
   font-weight: 400;
   transition: all 300ms ease;
-  padding: 0.5rem;
-  width: 8rem;
+  padding: 12px;
+  width: 150px;
   border-radius: 1rem;
   margin-bottom: 20px;
+  background-color: white;
 }
 
 .btn-color-1,
@@ -306,7 +309,11 @@ section {
 .about-details-container1 {
   margin-left: 50px;
 }
+
+
+
 /* SKILLS */
+
 .skill-section {
   margin-top: 50px;
   color: gray;
@@ -316,58 +323,38 @@ section {
   display: flex;
   gap: 70px;
 }
-
-.figma:hover {
-  cursor: pointer;
-  background-color: rgb(231, 231, 231);
-}
-
 .figma {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Center content vertically */
   align-items: center;
-  /* Center content horizontally */
   width: 70px;
   height: 90px;
   border-radius: 50%;
   background-color: #ffffff;
-  /* border: 1px solid #5B63B7; */
 }
 .figma img {
-  width: 50px;
-  height: auto;
-  /* Ensure the aspect ratio is maintained */
-  border-radius: 50%;
+
+  border-radius: 5%;
 }
 
 .skillsec {
   display: flex;
   gap: 70px;
 }
-.figma2:hover {
-  cursor: pointer;
-  background-color: rgb(231, 231, 231);
-}
-
 .figma2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Center content vertically */
   align-items: center;
-  /* Center content horizontally */
   width: 70px;
   height: 90px;
   border-radius: 50%;
   background-color: #ffffff;
-  /* border: 1px solid #5B63B7; */
 }
 .figma2 img {
   width: 50px;
   height: auto;
-  /* Ensure the aspect ratio is maintained */
   border-radius: 50%;
 }
 
@@ -375,67 +362,45 @@ section {
   display: flex;
   gap: 70px;
 }
-.figma3:hover {
-  cursor: pointer;
-  background-color: rgb(231, 231, 231);
-}
-
 .figma3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Center content vertically */
   align-items: center;
-  /* Center content horizontally */
   width: 70px;
   height: 90px;
   border-radius: 50%;
   background-color: #ffffff;
-  /* border: 1px solid #5B63B7; */
 }
 .figma3 img {
   width: 50px;
   height: auto;
-  /* Ensure the aspect ratio is maintained */
   border-radius: 50%;
 }
-
 .skillsec3 {
   display: flex;
   gap: 70px;
 }
-
-
-
 .Programming {
   display: flex;
   gap: 90px;
 }
 
-.figma1:hover {
-  cursor: pointer;
-  background-color: rgb(231, 231, 231);
-}
 .figma1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Center content vertically */
   align-items: center;
-  /* Center content horizontally */
   width: 70px;
   height: 90px;
   border-radius: 50%;
   background-color: #ffffff;
 }
-
 .figma1 img {
   width: 50px;
   height: auto;
-  /* Ensure the aspect ratio is maintained */
   border-radius: 50%;
 }
-
 .otherskills {
   display: flex;
   gap: 90px;
@@ -458,6 +423,8 @@ section {
   display: flex;
   gap: 12px;
 }
+
+
 /* EXPERIENCE SECTION */
 .about-containers {
   gap: 2rem;
@@ -475,7 +442,7 @@ section {
 .details-container {
   flex: 1;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: white;
   text-align: center;
   border-bottom: 3px solid #5B63B7;
@@ -556,7 +523,7 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 100%;
   height: 100%;
 }
@@ -726,7 +693,7 @@ article .icon {
 }
 #btn1 {
   margin-top: 20px;
-
+  background-color: white;
   font-weight: 400;
   transition: all 300ms ease;
   padding: 0.5rem;
@@ -753,8 +720,15 @@ article .icon {
 #Contact i{
   color: #5B63B7;
 }
+
 footer p {
-  margin-top: 30px;
+ padding-top: 40px;
   text-align: center;
+}
+footer{
+  width: 100%;
+  height: 90px;
+  background-color: #d6d6d6;
+  margin-top: 30px;
 }
 
