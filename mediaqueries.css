@@ -56,7 +56,7 @@
       height: 10vh;
     }
     #profile {
-      height: 83vh;
+      height: 69vh;
       margin-bottom: 0;
     }
     #resume{
@@ -222,7 +222,12 @@
  #aboutnone p{
   font-size: smaller;
  }
-
+#skills{
+  overflow: hidden;
+}
+#About{
+  overflow: hidden;
+}
   
 
 }
